@@ -39,8 +39,9 @@ class AdminController extends Controller
         //validate dữ liệu gửi từ form đi
         $this->validate($request, array(
             'name' => 'required',
-            'email' => 'required',
+            'email' => 'required|unique:admins,email',
             'password' => 'required',
+            'password_confirmation' => 'required|same:password',
         ));
 
         //Khởi tạo model để lưu trữ admin mới
