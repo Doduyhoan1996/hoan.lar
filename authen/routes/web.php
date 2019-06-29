@@ -61,6 +61,10 @@ Route::prefix('admin')->group(function (){
      */
     Route::post('logout', 'Auth\Admin\LoginController@logout')->name('admin.auth.logout');
 
+    Route::get('shop/category', function (){
+        return view('admin.content');
+    });
+
 });
 
 /**

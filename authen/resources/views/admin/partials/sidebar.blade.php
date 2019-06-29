@@ -32,6 +32,7 @@
                             <li><a href="{{url('/admin/shop/review')}}"><i class="fa fa-angle-right"></i> Đánh giá</a></li>
                             <li><a href="{{url('/admin/shop/customer')}}"><i class="fa fa-angle-right"></i> Khách hàng</a></li>
                             <li><a href="{{url('/admin/shop/brand')}}"><i class="fa fa-angle-right"></i> Nhãn hiệu</a></li>
+                            <li><a href="{{url('/admin/shop/statistic')}}"><i class="fa fa-angle-right"></i> Thống kê</a></li>
                         </ul>
                     </li>
                     <li class="treeview">
@@ -90,7 +91,7 @@
                     </li>
                     <li class="treeview">
                         <a href="#">
-                            <i class="fa fa-envelope"></i>
+                            <i class="fa fa-edit"></i>
                             <span>Global settings</span>
                             <i class="fa fa-angle-left pull-right"></i>
                         </a>
@@ -126,6 +127,18 @@
                         </a>
                         <ul class="treeview-menu">
                             <li><a href="{{url('/admin/contact')}}"><i class="fa fa-angle-right"></i> Liên hệ</a></li>
+                        </ul>
+                    </li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-envelope"></i>
+                            <span>Email</span>
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="{{url('/admin/email/inbox')}}"><i class="fa fa-angle-right"></i> Inbox</a></li>
+                            <li><a href="{{url('/admin/email/draft')}}"><i class="fa fa-angle-right"></i> Draft</a></li>
+                            <li><a href="{{url('/admin/email/send')}}"><i class="fa fa-angle-right"></i> Send</a></li>
                         </ul>
                     </li>
                 </ul>
